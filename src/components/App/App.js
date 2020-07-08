@@ -1,15 +1,19 @@
 import React from 'react';
-import styled from 'styled-components';
+import { Router } from '@reach/router';
 
-const StyledH1 = styled.h1`
-  text-align: center;
-`;
+import { UserProvider } from '../../providers/UserProvider';
+import Protected from '../Protected/Protected';
+import Main from '../../views/Main/Main';
+import Login from '../../views/Login/Login';
 
 function App() {
   return (
-    <div className="App">
-      <StyledH1>Hi user, check out login auth.</StyledH1>
-    </div>
+    <UserProvider>
+      <Router>
+        <Protected path="/" view={<Main/>} />
+        <Login path="/login"/>
+      </Router>
+    </UserProvider>
   );
 }
 
