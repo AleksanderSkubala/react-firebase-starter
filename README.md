@@ -9,7 +9,7 @@ If you want to use this example as base in your project, you have to:
   - set package.json as you want to
   - change firebase project settings in `firebaseConfig` (`firebaseInit.js`)
   - install modules
-  - run `npm run serve`
+  - run `npm start`
   - HAVE FUN !!!
 
 That's all what you have to do!
