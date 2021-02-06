@@ -7,7 +7,7 @@ React boilerplate that has already implemented connection with Firebase
 If you want to use this example as base in your project, you have to:
   - pull this repo
   - set package.json as you want to
-  - change firebase project settings in `firebaseInit.js` in `firebaseConfig`
+  - change firebase project settings in `firebaseConfig` (`firebaseInit.js`)
   - install modules
   - run `npm run serve`
   - HAVE FUN !!!
